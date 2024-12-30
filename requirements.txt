@@ -1,0 +1,16 @@
+# Ferramentas externas (devem ser instaladas no sistema operacional):
+# - host
+# - nmap
+# - nmblookup
+# - nc (netcat)
+# - rpcinfo
+# - curl
+# - dig
+# - snmpget
+# - ntpdc
+# - ntpq
+# - ldapsearch
+# - hexdump
+# - samba
+# - whois
+# - fping
