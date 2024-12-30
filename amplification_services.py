@@ -95,7 +95,7 @@ def salvar_resultados(rede):
     arquivo_nome = f"/tmp/{rede.replace('/', '_')}-{timestamp}.json"
     with open(arquivo_nome, "w") as arquivo:
         json.dump(resultados, arquivo, indent=4)
-    logging.info(f"\nResultados salvos em '/tmp/{arquivo_nome}'.")
+    logging.info(f"\nResultados salvos em '{arquivo_nome}'.")
 
 def main():
     import argparse
