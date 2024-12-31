@@ -1,11 +1,11 @@
 '''
-########################################### DISCLAIMER ############################################
-|Comando para identificar se seu servidor esta vulneravel:                                        |
-|nmap -sU -pU:123 -Pn -n --script=ntp-monlist <target>                                            |
-|Para mais informações a cerca do DRDoS utilizando o NTP, acesse                                  |
-|https://www.cisa.gov/news-events/alerts/2014/01/13/ntp-amplification-attacks-using-cve-2013-5211 |
-|I am NOT responsible for any damages caused or any crimes committed by using this tool.          |
-###################################################################################################
+############################################# DISCLAIMER ##############################################
+|   Comando para identificar se seu servidor esta vulneravel:                                         |
+|   nmap -sU -pU:123 -Pn -n --script=ntp-monlist <target>                                             |
+|   Para mais informações a cerca do DRDoS utilizando o NTP, acesse                                   |
+|   https://www.cisa.gov/news-events/alerts/2014/01/13/ntp-amplification-attacks-using-cve-2013-5211  |
+|   I am NOT responsible for any damages caused or any crimes committed by using this tool.           |
+#######################################################################################################
 
 Bandwidth Amplification Factor - 556.9
 
